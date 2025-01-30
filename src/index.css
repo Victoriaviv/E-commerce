@@ -1,0 +1,235 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background-color: white;
+}
+
+
+
+.main{
+  background-color: white;
+  
+  min-height: 30vh;
+width:100%;
+}
+h1{
+  color: black;
+  padding-left: 80px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.menu1{
+  display: flex;
+  flex-direction: row;
+}
+.menulist{
+  color: black;
+  list-style: none;
+  padding-left: 200px;
+}
+.menu{
+  font-size: 30px;
+  color:black;
+  padding-bottom: -5rem;
+margin-top: -200px;
+padding-left: 400px;
+
+}
+.menu button{
+font-size: 20px;
+padding: 20px;
+}
+.menu p{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.items img{
+ font-size: small;
+  padding-left: 40px;
+}
+.items p{
+  color: black;
+  font-size: 20px;
+  margin-left: 100px;
+
+}
+.items{
+  display: flex;
+}
+.New p{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 100px;
+ 
+}
+.container p1{
+  display: flex;
+  color: black;
+  padding-left: 150px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container{
+  display: flex;
+}
+.container p2{
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+  padding-left: 180px;
+}
+.container img{
+  height: 50vh;
+  padding-left: 90px;
+}
+.buy{
+  background-color: #69727D;
+ margin-top:40px; 
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 600px;
+  border-radius: 5px;
+} 
+.search-icon1{
+  color:#F3A23E;
+  font-size: 30px;
+}
+.search-icon2{
+  color: #DDDDDD;
+  font-size: 30px;
+}
+.star{
+  margin-left: 150px;
+}
+.moon-icon1{
+  color:gray;
+  background-color: #BFB9A6;
+  border-radius: 100%;
+  font-size: 30px;
+}
+.moon-icon2{
+background-color: #A27A5C;
+color: gray;
+border-radius: 100%;
+font-size: 30px;
+}
+.moon-icon3{
+  background-color: #DDDDDD;
+  color: gray;
+  border-radius: 100%;
+  font-size: 30px;
+  
+}
+.moon-icon4{
+  background-color: #FFFFFF;
+  font-size: 30px;
+  border-radius: 100%;
+  color: gray;
+}
+.moon{
+  padding-left: 10rem;
+  justify-content: space-between;
+}
+.vendor p1{
+  display: flex;
+  color: black;
+  padding-left: 100px;
+  font-size: 30px;
+  font-weight: bolder;
+  
+}
+.vendor img{
+display: flex;
+width: 80%;
+padding-left: 90px;
+}
+.vendor{
+  display: flex;
+  justify-content: space-between;
+}
+.arrow{
+  color: gray;
+  font-size: 50px;
+  padding-left: 40px;
+  margin-top: 30px;
+}
+.vendor p2{
+  color: black;
+  padding-left: 100px;
+  margin-top: 20px;
+}
+.goarrow{
+  color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+   font-size: 50px;
+ margin-left: 10rem;
+   margin-top: 10px;
+
+}
+
+.us p1{
+  color: black;
+margin-top: 10rem;
+  margin-left: 90px;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.us p2{
+  color: black;
+  margin-left: 40px;
+
+  
+}
+.truck{
+  color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+   font-size: 50px;
+   margin-left: 70px;
+   margin-top: 10px;
+
+}
+.home{
+  color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+   font-size: 50px;
+   margin-left: 150px;
+   margin-top: 10px;
+}
+.us{
+  display: flex;
+  margin-left: 80px;
+  justify-content: space-between;
+}
+.follow {
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.follow img{
+  width: 30vh;
+padding-left: 60px;
+border-radius: 5px;
+}
+.follow p{
+  color: black;
+}

@@ -1,0 +1,102 @@
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .newsletter h3,
+  .contact h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter p,
+  .contact p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .email-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+  }
+  
+  .email-input input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .email-input button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .footer-column h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    font-size: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li:hover {
+    color: #5a54ea;
+  }
+  
+  .payment-icion {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .payment-icon img {
+    width: 250px;
+    height:auto;
+  }
+  
