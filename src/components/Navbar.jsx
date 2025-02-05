@@ -1,14 +1,25 @@
 import React from "react";
 import "../styles/Navbar.css"
-
+import { useState } from "react";
+// import Modelform from "./Modelform";
 import { FaSearch, FaUser, FaShoppingCart, FaHeart, FaPhoneAlt } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { Outlet, Link } from "react-router-dom";
-const Navbar = () => {
-  return (
-    
+import Login from "./Login";
+function Navbar(){
+const [modal,setModal] = useState(false);
 
+const changeModal = () => {
+  setModal(!modal)
+}
+
+
+  return (
+  
+ 
 <div className="main">
+  {modal && <Login changeModal = {changeModal}/>}
+
 <header>
     
     <div className="navbar-container">
@@ -31,7 +42,7 @@ const Navbar = () => {
 
       
       <div className="icons-container">
-        <CiUser  className="icon" />
+        <CiUser  className="icon"onClick={changeModal} />
         <div className="icon-badge">
           <FaShoppingCart className="icon" />
           <span className="badge">0</span>
@@ -52,6 +63,7 @@ const Navbar = () => {
         <Link to="/Vendors">Vendors</Link>
         <Link to="/Blog">Blog</Link>
         <Link to="/Contact">Contact</Link>
+       {/* <button onClick={changeModal}>Login</button> */}
       </div>
      
 

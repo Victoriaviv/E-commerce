@@ -1,0 +1,53 @@
+.shop-page h1{
+    color:black;
+    font-size: 50px;
+}
+.shop-page{
+    background-image: url("../assets/shoppage.webp");
+    width: 100%;
+    height: 60vh;
+   
+    background-repeat: no-repeat;
+}
+.categories{
+    color: black;
+    padding-left: 30px;
+    margin-top: -90px;
+}
+.categories li{
+    list-style: none;
+    line-height: 40px;
+}
+.categories h2{
+    padding-left: 30px;
+    font-size: 30px;
+}
+.shop-bar{
+    color: black;
+    padding-left: 30rem;
+    padding-top: 70px;
+}
+.defoult{
+    padding-left: 50px;
+    margin-left: 200px;
+    padding-top: 20px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+.men{
+    padding-left: 10px;
+    color: #ADADAD;
+    font-size: 30px;
+}
+.mini{
+    padding-left: 15px;
+    font-size: 30px;
+}
+.shop-container{
+    
+}
+.shop-list{
+    color: black;
+}
+

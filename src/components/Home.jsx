@@ -131,7 +131,7 @@ const Home = () => {
  <button className="buy">SHOP NOW</button> 
 
  <h1>Our Vendor List</h1>
- i
+ 
  <div className="vendor">
  <div>
     <img src={image1} alt="image1"/>
