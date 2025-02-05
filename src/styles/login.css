@@ -23,15 +23,50 @@
 }
 .button{
     width: 5rem;
-    background-color: aqua;
+    background-color: rgb(14, 14, 231);
     border: none;
     border-radius: 5px;
     font-size: 20px;
-    margin-left: 90px;
+    margin-left: 130px;
+    padding: 10px;
+}
+.button:hover{
+    background-color:rgb(27, 27, 54);
 }
 .form input{
     background-color:white;
     font-size: 20px;
     border: solid 1px rgb(172, 170, 170);
     border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+p4{
+    color: black;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 90px;
+    margin-top: -2rem;
+}
+p3{
+    color: blue;
+    margin-left: 120px;
+    font-size: 20px;
+    margin-top: -2rem;
+}
+
+.iconclose{
+    color: black;
+    padding-left: 20rem;
+    padding-top: -20px;
+}
+.iconclose:hover{
+    color: blue;
+   
+    }
+a{
+    color: blue;
+    margin-left: 7rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
 }
