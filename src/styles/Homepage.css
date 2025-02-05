@@ -1,0 +1,29 @@
+.navcontainer{
+   display: flex; 
+   margin-left: 30px;
+padding-left: 20px;
+}
+.img{
+    padding-left: 20rem;
+}
+
+.tit{
+    color: black;
+    font-size:15px;
+    padding-left: 7rem;
+}
+.btn1{
+    color: white;
+    background-color: rgb(54, 85, 7);
+   width: 70px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   margin-left: 5rem;
+}
+.cont{
+   padding-left: 10rem;
+    
+    color: black;
+    
+}

@@ -26,7 +26,7 @@ const changeModal = () => {
      
       <h1 className="logo">Botiga</h1>
 
-      
+      <li><Link to="/view">view</Link></li>
       <div className="search-container">
         <select className="category-select">
           <option>All Categories</option>

@@ -21,7 +21,10 @@ import instagram1 from "../assets/instagram1.webp";
 import instagram2 from "../assets/instagram2.webp";
 import instagram3 from "../assets/instagram3.webp";
 import instagram4 from "../assets/instagram4.webp";
-import instagram5 from "../assets/instagram5.webp"
+import instagram5 from "../assets/instagram5.webp";
+
+
+
 
 const Home = () => {
   
@@ -81,6 +84,7 @@ const Home = () => {
     <IoStarSharp className="search-icon1"/>
     <IoStarSharp className="search-icon2"/>
     <IoStarSharp className="search-icon2"/>
+   
     </div>
     <div className="moon">
     <FaRegCircle className="moon-icon1" />

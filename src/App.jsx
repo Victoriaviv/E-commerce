@@ -8,6 +8,8 @@ import Vendors from "./components/Vendors.jsx";
 import Contact from "./components/Contact.jsx";
 import Layout from "./components/Layout.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Homepage from "./components/Homepage.jsx";
+import Singlepage from "./components/Singlepage.jsx";
 
 
 const App = () => {
@@ -21,7 +23,8 @@ const App = () => {
           <Route path="shop" element={<Shop />} />
           <Route path="vendors" element={<Vendors />} />
            <Route path="contact" element={<Contact />} />
-         
+           <Route path="view" element ={<Homepage/>}/>
+           <Route path="/singlecard/:id" element={<Singlepage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
