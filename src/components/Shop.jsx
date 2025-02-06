@@ -52,35 +52,35 @@ const Shop = () => {
         </ul>
        
     </div>
-    <div className="shop-list">
-      <div className="shop-container">
-        {products.map((shop, index) => (
-          <div key={index} className="shop-card">
-            <img src={shop.image} alt={shop.name} className="shop-image" />
-            <p className="shop-date">{shop.price}</p>
-            <h3>{shop.name}</h3>
+   <div className="products_container">
+        {products.map((product) => (
+          <div key={product.id} className="product_card">
+            <img src={products.image} alt={product.name} />
+          
+            
+            <h3>{product.name}</h3>
+            <p>{product.price}</p>
+            
+
             <div className="star">
-    <IoStarSharp className="search-icon1"/>
-    <IoStarSharp className="search-icon1"/>
-    <IoStarSharp className="search-icon1"/>
-    <IoStarSharp className="search-icon2"/>
-    <IoStarSharp className="search-icon2"/>
-    </div>
-    <div className="moon">
+              {[...Array(5)].map((_, i) => (
+                <IoStarSharp key={i} style={{ color: i < product.rating ? "gold" : "grey",fontSize:"30px" }} />
+              ))}
+            </div>
+            <div className="moon">
     <FaRegCircle className="moon-icon1" />
     <FaRegCircle className="moon-icon2" />
     <FaRegCircle className="moon-icon3" />
     <FaRegCircle className="moon-icon4" />
+    
 
     </div>
    
-           
           </div>
         ))}
       </div>
-      
 
-    </div>
+    
     </>
     
   );

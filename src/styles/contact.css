@@ -1,0 +1,89 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    margin-left: 90px;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-container {
+      flex-direction: row;
+    }
+  }
+  
+  .form-container {
+    flex: 2;
+  }
+  .name-inputs{
+    background-color: white;
+    display: flex;
+    font-size: 60px;
+  
+  }
+  .inputs{
+    background-color: white;
+    font-size: 50px;
+  }
+  .form-group{
+    color:black;
+    background-color: white;
+    font-size: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, textarea {
+    width: 100%;
+    border: 1px solid #f0e8e8;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: white;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .submit {
+    background-color: rgb(26, 78, 147);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+  }  
+  img {
+    width: 90%;
+    height: 50vh;
+    margin-left: 50px;
+  }
+  .sidebar h2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .sidebar p{
+    font-size: 17px;
+  }
+  .form-container h2{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }

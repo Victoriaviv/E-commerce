@@ -1,20 +1,28 @@
 import react from'react'
 
-import lotion from "../assets/lotion.webp";
-import gadget from "../assets/gadget.webp";
+import water from "../assets/water.webp";
+import alexa from "../assets/alexa.webp";
+import headset from "../assets/headset.webp"
 import { useNavigate } from 'react-router-dom';
-import "../styles/Homepage.css";
+// import "../styles/Homepage.css";
 export const productlist= [
     {
     id:1,
-    image:lotion,
-    cardTitle:'oil',
+    image:water,
+    cardTitle:'All in one Bottle',
     },
     {
     id:2,
-    image:gadget,
-    cardTitle:'sugar',
+    image:alexa,
+    cardTitle:'Amazon Alexa',
     },
+    {
+     id:3,
+        image:headset,
+        cardTitle:'Headset Gammer Region',
+       
+     },
+
     
        
 ];
@@ -29,11 +37,11 @@ function Homepage() {
         <div className='navcontainer'>
            {productlist.map((item)=> (
             <div className='cont'key={item.id}>
-                <div ><img src={item.image}/></div>
+                <div className='mimi'><img src={item.image}/></div>
                 <div className='tit'>{item.cardTitle}</div>
-                <button type='button'className='btn1'
+                {/* <button type='button'className='btn1'
                 onClick={()=>handleNavigate(item.id)}
-                >view</button>
+                >view</button> */}
             </div>
            ))}
         </div>

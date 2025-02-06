@@ -66,7 +66,7 @@ const Blog = () => {
         ))}
       </div>
       <div className="blog-list">
-      <h4>BLOG</h4>
+      
       <div className="blog-container">
         {blogData1.map((blog, index) => (
           <div key={index} className="blog-card">

@@ -22,13 +22,16 @@
     background-color:rgba(67, 66, 66, 0.916)
 }
 .button{
-    width: 5rem;
+    width: 20rem;
     background-color: rgb(14, 14, 231);
     border: none;
     border-radius: 5px;
     font-size: 20px;
-    margin-left: 130px;
+    margin-left: 10px;
     padding: 10px;
+    
+    
+    
 }
 .button:hover{
     background-color:rgb(27, 27, 54);

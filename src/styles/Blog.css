@@ -14,10 +14,16 @@
     padding-left: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
+    height: 300px;
 }
 .blog-content{
     padding-left: 30px;
     margin-left: 30px;
+}
+.blog-list h4{
+    font-size: 30px;
+    margin-left: 40rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
  

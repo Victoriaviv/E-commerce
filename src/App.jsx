@@ -24,6 +24,7 @@ const App = () => {
           <Route path="vendors" element={<Vendors />} />
            <Route path="contact" element={<Contact />} />
            <Route path="view" element ={<Homepage/>}/>
+           <Route path="/Homepage" element={<Homepage />} />
            <Route path="/singlecard/:id" element={<Singlepage/>}/>
         </Route>
       </Routes>
