@@ -373,5 +373,9 @@ border-radius: 5px;
       margin-left: -90px;
       
       } 
+      .vendor_card h3{
+        font-size:40px ;
+        padding-left: 40px;
+      }
  
 }
