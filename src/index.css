@@ -292,4 +292,86 @@ border-radius: 5px;
 }
 .follow p{
   color: black;
+}@media(max-width:420px){
+
+  .follow {
+    margin-top: 20px;
+    display:block;
+    margin-bottom: 10px;
+  }
+  .follow img{
+    width: 35vh;
+    height: 35vh;
+  padding-left:- 5px;
+  border-radius: 5px;
+  }
+  h1{
+    color: black;
+    font-size: 20px;
+  }
+  .container {
+    display: block;
+   margin-left:-10px;
+  
+  }
+  .container img{
+    margin-left: -50px;
+  }
+  .us{
+    display: block;
+    margin-left: 50px;
+    justify-content: space-between;
+  }
+  .vendor_container{
+    display: block;
+    justify-content: space-between;
+  } 
+  .vendor_container  img{
+    display: flex;
+    width: 85%;
+    height: 40vh;
+    margin-left: -20px;
+    padding-left: 20px;
+    } 
+    .products_container {
+      display: block;
+      padding-left: -40px;
+     
+    }
+    .products_container img{
+      padding-left: -90px;
+      box-shadow:border-box;
+      margin-left: -10px;
+      
+    }
+    .image_container{
+      display: block;
+      padding-left: 40px;
+      margin-left: 50px;
+    }
+    .butto{
+      font-size: 50px;
+      padding: 30px;
+      margin-left: -10px;
+      
+      }
+      .buy{
+        background-color: #69727D;
+       margin-top:40px; 
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 
+        100px;
+        border-radius: 5px;
+      }
+      .right_content h2{
+        font-size: 20px;
+        color:black;
+        padding-bottom: -5rem;
+      margin-top: 20px;
+      padding-left: 10px;
+      margin-left: -90px;
+      
+      } 
+ 
 }

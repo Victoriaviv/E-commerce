@@ -99,4 +99,11 @@
     width: 250px;
     height:auto;
   }
+  @media(max-width:720px){
+    .payment-icon img {
+      width: 200px;
+      height:auto;
+      margin-left: -40px;
+    }
+  }
   

@@ -14,7 +14,7 @@ const Login = ({changeModal})=> {
                 <button type="login"className="button">Login</button>
                 <a href="#">forgot password?</a>
                 <p4 >Do not have an account</p4>
-                <p3>sign upHere</p3>
+                <p3 onClick={()=>handleNavigate(product.id)}>sign upHere </p3>
                  
                 
             </form>

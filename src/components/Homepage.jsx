@@ -20,7 +20,7 @@ export const productlist= [
      id:3,
         image:headset,
         cardTitle:'Headset Gammer Region',
-       
+        
      },
 
     
@@ -39,11 +39,13 @@ function Homepage() {
             <div className='cont'key={item.id}>
                 <div className='mimi'><img src={item.image}/></div>
                 <div className='tit'>{item.cardTitle}</div>
+
                 {/* <button type='button'className='btn1'
                 onClick={()=>handleNavigate(item.id)}
                 >view</button> */}
             </div>
            ))}
+           
         </div>
     )
 }

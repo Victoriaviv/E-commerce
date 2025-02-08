@@ -13,7 +13,7 @@ function Singlepage(){
     return(
         <div className="card">
           <div><img src={card.image}/></div> 
-          <div className="crd">{card.cardTitle} </div>
+          {/* <div className="crd">{card.cardTitle} </div> */}
           <div className="contenti">
           <p1>All In One Bottle</p1>
           <div className="stars">

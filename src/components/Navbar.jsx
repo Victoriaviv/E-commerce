@@ -5,13 +5,18 @@ import { useState } from "react";
 import { FaSearch, FaUser, FaShoppingCart, FaHeart, FaPhoneAlt } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";
 import { Outlet, Link } from "react-router-dom";
+import { CgMenuGridO } from "react-icons/cg";
 import Login from "./Login";
+import { IoCloseSharp } from "react-icons/io5";
+
 function Navbar(){
+  
 const [modal,setModal] = useState(false);
 
 const changeModal = () => {
   setModal(!modal)
 }
+
 
 
   return (
@@ -56,13 +61,16 @@ const changeModal = () => {
 
     
     <nav className="bottom-navbar">
+    <button className="categories-button">Trending Categories ▼</button>
       <div className="nav-links">
-        <button className="categories-button">Trending Categories ▼</button>
+       
+      
         <Link to="/">Home</Link>
         <Link to="/Shop">Shop</Link>
         <Link to="/Vendors">Vendors</Link>
         <Link to="/Blog">Blog</Link>
         <Link to="/Contact">Contact</Link>
+        <IoCloseSharp className="uu"/>
        {/* <button onClick={changeModal}>Login</button> */}
       </div>
      
@@ -70,8 +78,11 @@ const changeModal = () => {
       <div className="contact-info">
         <FaPhoneAlt />
         <span>800-123-4567</span>
+        
+        <CgMenuGridO className="uuu"/>
       </div>
     </nav>
+   
   </header>
     
      

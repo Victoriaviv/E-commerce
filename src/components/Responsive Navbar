@@ -1,0 +1,62 @@
+import { useState } from "react";
+import { Menu, Search, ShoppingCart, User, Heart, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export default function MobileNavbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <nav className="bg-white shadow-md p-4 flex justify-between items-center">
+      {/* Left side - Logo and Hamburger */}
+      <div className="flex items-center gap-3">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden">
+          <Menu size={28} />
+        </button>
+        <span className="text-xl font-bold">Botiga</span>
+      </div>
+
+      {/* Center - Search Bar */}
+      <div className="hidden lg:flex border border-purple-500 rounded-full px-3 py-1 items-center w-1/3">
+        <input
+          type="text"
+          placeholder="Search products..."
+          className="flex-1 outline-none px-2"
+        />
+        <Search size={20} />
+      </div>
+
+      {/* Right Side - Icons */}
+      <div className="flex items-center gap-4">
+        <User size={24} className="hidden lg:block" />
+        <ShoppingCart size={24} />
+        <Heart size={24} />
+      </div>
+
+      {/* Mobile Search Bar */}
+      <div className="lg:hidden w-full mt-2">
+        <div className="flex border border-purple-500 rounded-full px-3 py-1 items-center">
+          <input
+            type="text"
+            placeholder="Search products..."
+            className="flex-1 outline-none px-2"
+          />
+          <Search size={20} />
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-white shadow-lg p-4 flex flex-col gap-4">
+          <a href="#" className="text-lg">Home</a>
+          <a href="#" className="text-lg">Shop</a>
+          <a href="#" className="text-lg">Vendors</a>
+          <a href="#" className="text-lg">Blog</a>
+          <a href="#" className="text-lg">Contact</a>
+          <div className="flex items-center gap-2 text-lg font-bold">
+            <Phone size={20} className="text-purple-600" /> 800-123-4567
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}

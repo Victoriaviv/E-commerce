@@ -114,4 +114,49 @@
     gap: 5px;
     padding-right: 80px;
   }
+  .uu{
+    display: none;
+  }
+  .uuu{
+    display: none;
+  }
   
+  @media (max-width:720px){
+.uu{
+  display: flex;
+  color: white;
+}
+/* .nav-links {
+  display: block;
+  width: 200px;
+  top: 0;
+  right:-200px;
+  height: 100vh;
+  color: white;
+background-color: gray;
+  position: fixed;
+
+} */
+.nav-links .a{
+  display:block;
+  margin:25px;
+  color: white;
+}
+.nav-links .uu{
+    position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.nav-links{
+display: none;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding-left: 20px;
+}
+  }
