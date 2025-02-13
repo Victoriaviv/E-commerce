@@ -32,7 +32,7 @@ import map from "../assets/map.png"
       </div>
 
      
-      <div className="sidebar">
+      <div className="sideba">
         <h2>Our Store</h2>
         <p>501-521 Fashion Ave, New York, NY 10018, USA</p>
         <p><strong>PHONE:</strong> +1 212 244 2681</p>

@@ -292,7 +292,7 @@ border-radius: 5px;
 }
 .follow p{
   color: black;
-}@media(max-width:420px){
+}@media(max-width:720px){
 
   .follow {
     margin-top: 20px;

@@ -1,0 +1,42 @@
+.nav{
+    display: flex;
+   position: fixed;
+   width: 82%;
+    background-color:#F5F8FA;
+    margin-top: -46rem;
+    margin-left: 16rem;
+    box-shadow: 2px 1px 2px 1px;
+    /* margin-right: 10rem; */
+   
+}
+.header{
+  box-shadow: 1px 1px 1px 1px;
+  padding-top: -20px;
+
+}
+
+  .dashmenu{
+    margin-left: 50rem;
+    color: black;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: -20px;
+  }
+  .sun{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .search{
+ 
+    font-size: 30px;
+    margin-top: 10px;
+    padding-top: 40px;
+    margin-bottom: -20px;
+    margin-left: 15rem;
+  }
+.nav img{
+  width: 5%;
+  height: 20%;
+  border-radius: 100%;
+  
+}

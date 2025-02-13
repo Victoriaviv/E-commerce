@@ -72,6 +72,7 @@ const changeModal = () => {
         <Link to="/Contact">Contact</Link>
         <IoCloseSharp className="uu"/>
        {/* <button onClick={changeModal}>Login</button> */}
+       <Link to="/Homeproduct">Homeproduct</Link>
       </div>
      
 

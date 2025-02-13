@@ -4,8 +4,9 @@ import"../styles/login.css";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Login = ({changeModal})=> {
-
+    const [isSignup, setIsSignup] = useState(false);
     return(
+        
         <div className="formcontainer">
             <form className="form" >
                 <IoCloseSharp className="iconclose" onClick={changeModal} />
@@ -14,10 +15,9 @@ const Login = ({changeModal})=> {
                 <button type="login"className="button">Login</button>
                 <a href="#">forgot password?</a>
                 <p4 >Do not have an account</p4>
-                <p3 onClick={()=>handleNavigate(product.id)}>sign upHere </p3>
-                 
-                
+               
             </form>
+            
             
         </div>
     );

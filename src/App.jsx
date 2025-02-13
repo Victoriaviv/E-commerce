@@ -10,6 +10,9 @@ import Layout from "./components/Layout.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Homepage from "./components/Homepage.jsx";
 import Singlepage from "./components/Singlepage.jsx";
+import Homeproduct from "./components/Homeproduct.jsx"
+import DashbordLayout from "./Dashbord/DashbordLayout.jsx";
+import Dashbordview from "./Dashbord/Dashbordview.jsx";
 
 
 const App = () => {
@@ -21,13 +24,22 @@ const App = () => {
           <Route path="/" index element={<Home/>} />
           <Route path="blog" element={<Blog />} />
           <Route path="shop" element={<Shop />} />
-          <Route path="vendors" element={<Vendors />} />
+           <Route path="Homeproduct"element={<Homeproduct/>}/>
+           <Route path="vendors" element={<Vendors />} />
            <Route path="contact" element={<Contact />} />
            <Route path="view" element ={<Homepage/>}/>
            <Route path="/Homepage" element={<Homepage />} />
            <Route path="/singlecard/:id" element={<Singlepage/>}/>
+          
+           
         </Route>
+        <Route path="/"element={<DashbordLayout/>}>
+        <Route path="/dashbord"index element={<Dashbordview/>}/>
+       
+        </Route>
+        
       </Routes>
+     
     </BrowserRouter>
 
   );

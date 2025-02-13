@@ -25,5 +25,26 @@
     margin-left: 40rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+@media (max-width:720px){
+    .blog-container{
+        display:block;
+       padding-left:30px ;
+       color: black;
+       grid-template-columns: repeat(3,1fr);
+    }
+    .blog-image{
+        width: 200px;
+        padding-left: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        height: 200px;
+    }
+    .blog-list h4{
+        font-size: 30px;
+        margin-left: 10rem;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+}
 
  
