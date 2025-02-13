@@ -23,6 +23,12 @@ const linedata = [
 ];
 
 const Dashbordview = () => {
+  const recentOrders = [
+    { trackingNo: "#JY7685", product: "Hamlet Watch 3", price: "$654", totalOrder: 325, total: "$14"  },
+    { trackingNo: "#JY7685", product: "Acer Laptop", price: "$654", totalOrder: 325, total: "$11" },
+    { trackingNo: "#JY7685", product: "Rayban Glass", price: "$654", totalOrder: 57, total: "$17" },
+    { trackingNo: "#JY7685", product: "Adidas Blaze", price: "$654", totalOrder: 125, total: "$10" }
+  ];
   const boxes = [
     { id: 1, title: "customers", value: 1200 },
     { id: 2, title: "Sales", value: 300 },
@@ -38,7 +44,7 @@ const Dashbordview = () => {
   };
 
   return (
-    <>
+    <div className="dashboard_content">
       <div className="dashboard">
         <div className="stats-container">
           {boxes.map((box) => (
@@ -68,9 +74,10 @@ const Dashbordview = () => {
           </ResponsiveContainer>
         </div>
       </div>
-    
-      <ResponsiveContainer width="100%" height="100%">
-        <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={10} data={linedata}>
+    <div className="radial_chart">
+    <h2 className="radial-title">Analytics</h2>
+      <ResponsiveContainer width="100%" height={300}>
+        <RadialBarChart cx="60%" cy="60%" innerRadius="10%" outerRadius="80%" barSize={20} data={linedata}>
           <RadialBar
             minAngle={15}
             label={{ position: 'insideStart', fill: '#fff' }}
@@ -78,10 +85,39 @@ const Dashbordview = () => {
             clockWise
             dataKey="uv"
           />
-          <Legend iconSize={10} layout="vertical" verticalAlign="middle" wrapperStyle={style} />
+         {/* <Legend iconSize={10} layout="vertical" verticalAlign="left" wrapperStyle={style} /> */}
         </RadialBarChart>
       </ResponsiveContainer>
-    </>
+      </div>
+      <div className="recent-orders">
+        <h3>Recent Order</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tracking No</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Total Order</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {recentOrders.map((order, index) => (
+              <tr key={index}>
+                <td>{order.trackingNo}</td>
+                <td className="product-info">
+                  {/* <img src={order.img} alt={order.product} /> */}
+                  {order.product}
+                </td>
+                <td>{order.price}</td>
+                <td><div className="badge">{order.totalOrder}</div></td>
+                <td>{order.total}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 };
 

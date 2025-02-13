@@ -1,5 +1,6 @@
 import React from "react";
 import "./dashbord_styles/sidebar.css"
+import { Link } from "react-router-dom";
 import { FaHome,FaUsers ,FaSalesforce  } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import { MdDiscount, MdInventory2 } from "react-icons/md";
@@ -12,15 +13,15 @@ function Sidebar () {
 <div className="sidebar">
 <div className="log">Botiga</div>
 <ul>
-     <li><FaHome/>   Dashbord</li> 
-     <li><MdProductionQuantityLimits/>   products</li>
-     <li><TiShoppingCart />   orders</li>
-     <li><FaUsers />   customers</li>
-     <li>< MdInventory2/>  invetory management</li>
-     <li><FaSalesforce/>  sales&report</li>
-     <li><MdDiscount/>   Discount&coupons</li>
-     <li><IoMdSettings />   setting</li>
-     <li><CiLogin/>   logout</li>
+<li><Link to="/Dashbord"><FaHome/>   Dashbord</Link></li> 
+<li><Link to="/Products"><MdProductionQuantityLimits/>products</Link></li> 
+<li><Link to="/Ordes"><TiShoppingCart />   orders</Link></li> 
+<li><Link><FaUsers />   customers</Link></li> 
+<li><Link>< MdInventory2/>  invetory management</Link></li> 
+<li><Link><FaSalesforce/>  sales&report</Link></li> 
+<li><Link><MdDiscount/>   Discount&coupons</Link></li> 
+<li><Link><IoMdSettings />   setting</Link></li> 
+<li><Link><CiLogin/>   logout</Link></li> 
      </ul>
     
       

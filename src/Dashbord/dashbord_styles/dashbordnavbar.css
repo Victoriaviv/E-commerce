@@ -1,13 +1,17 @@
 .nav{
     display: flex;
    position: fixed;
-   width: 82%;
+   width: 83%;
     background-color:#F5F8FA;
-    margin-top: -46rem;
-    margin-left: 16rem;
+    margin-top: -51rem;
+    margin-left: 15.5rem;
     box-shadow: 2px 1px 2px 1px;
     /* margin-right: 10rem; */
-   
+   z-index: 1;
+}
+body {
+  background-color: #f5f8fa;
+  color: black;
 }
 .header{
   box-shadow: 1px 1px 1px 1px;
