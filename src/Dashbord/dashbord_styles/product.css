@@ -1,0 +1,40 @@
+.recent-products{
+    
+    width: 70%;
+    margin-left: 20rem;
+    margin-top: 5rem;
+}
+.recent-products h3{
+    font-size: 30px;
+}
+.img{
+  
+}
+.recent-products img{
+    width: 40px;
+    height: 40px;
+}
+.recent-products, .top-selling {
+    background: #f8fbff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+.stock{
+    color: blue;
+    
+    font-weight: 40px;
+}
+.productheader{
+   margin-top: 3rem;
+   margin-bottom: -5rem;
+}
+.searc-input{
+margin-right: -30rem;
+}
+.filter-dropdown{
+   border: none;
+    padding:10px 20px 10px 20px;
+    margin-left: 10px;
+    
+}

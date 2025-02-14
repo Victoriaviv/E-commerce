@@ -14,8 +14,8 @@ function Sidebar () {
 <div className="log">Botiga</div>
 <ul>
 <li><Link to="/Dashbord"><FaHome/>   Dashbord</Link></li> 
-<li><Link to="/Products"><MdProductionQuantityLimits/>products</Link></li> 
-<li><Link to="/Ordes"><TiShoppingCart />   orders</Link></li> 
+<li><Link to="/Product"><MdProductionQuantityLimits/>products</Link></li> 
+<li><Link to="/Order"><TiShoppingCart />Orders</Link></li> 
 <li><Link><FaUsers />   customers</Link></li> 
 <li><Link>< MdInventory2/>  invetory management</Link></li> 
 <li><Link><FaSalesforce/>  sales&report</Link></li> 

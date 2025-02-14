@@ -13,8 +13,8 @@ import Singlepage from "./components/Singlepage.jsx";
 import Homeproduct from "./components/Homeproduct.jsx"
 import DashbordLayout from "./Dashbord/DashbordLayout.jsx";
 import Dashbordview from "./Dashbord/Dashbordview.jsx";
-
-
+import Order from "./Dashbord/Order.jsx";
+import Product from "./Dashbord/Product.jsx";
 const App = () => {
   return (
   
@@ -35,7 +35,8 @@ const App = () => {
         </Route>
         <Route path="/"element={<DashbordLayout/>}>
         <Route path="/dashbord"index element={<Dashbordview/>}/>
-       
+        <Route path="/Order" element={<Order/>}/>
+        <Route path="/Product"element={<Product/>}/>
         </Route>
         
       </Routes>

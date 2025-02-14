@@ -1,15 +1,61 @@
 import React from "react";
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadialBarChart, RadialBar } from "recharts";
+import {LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,ResponsiveContainer, RadialBarChart, RadialBar } from "recharts";
 
 import "./dashbord_styles/Dashbordview.css";
 
+const data1 = [
+  { name: 'January',uv: 4000,pv: 2400,amt: 2400 },
+  { name: 'February', uv: 3000, pv: 1398,amt: 2210},
+  {name: 'March',uv: 2000,pv: 9800,amt: 2290},
+  {name: 'April',uv: 2780,pv: 3908,amt: 2000},
+  {name: 'May',uv: 1890,pv: 4800,amt: 2181},
+  {name: 'June',uv: 2390,pv: 3800,amt: 2500},
+  {name: 'July',uv: 3490,pv: 4300,amt: 2100},
+];
 const data = [
-  { name: "Page A", uv: 4000, pv: 2400, amt: 2400 },
-  { name: "Page B", uv: 3000, pv: 1398, amt: 2210 },
-  { name: "Page C", uv: 2000, pv: 9800, amt: 2290 },
-  { name: "Page D", uv: 2780, pv: 3908, amt: 2000 },
-  { name: "Page E", uv: 1890, pv: 4800, amt: 2181 },
+  {
+    name: 'Page A',
+    uv: 4000,
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: 'Page B',
+    uv: 3000,
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: 'Page C',
+    uv: 2000,
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: 'Page D',
+    uv: 2780,
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: 'Page E',
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: 'Page F',
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
+  },
 ];
 
 const linedata = [
@@ -23,12 +69,7 @@ const linedata = [
 ];
 
 const Dashbordview = () => {
-  const recentOrders = [
-    { trackingNo: "#JY7685", product: "Hamlet Watch 3", price: "$654", totalOrder: 325, total: "$14"  },
-    { trackingNo: "#JY7685", product: "Acer Laptop", price: "$654", totalOrder: 325, total: "$11" },
-    { trackingNo: "#JY7685", product: "Rayban Glass", price: "$654", totalOrder: 57, total: "$17" },
-    { trackingNo: "#JY7685", product: "Adidas Blaze", price: "$654", totalOrder: 125, total: "$10" }
-  ];
+ 
   const boxes = [
     { id: 1, title: "customers", value: 1200 },
     { id: 2, title: "Sales", value: 300 },
@@ -57,22 +98,29 @@ const Dashbordview = () => {
           ))}
         </div>
       </div>
-      
-      <div className="dashboard-container">
-        <h2 className="dashboard-title">Total spent</h2>
-        <div className="chart-wrapper">
-          <ResponsiveContainer width="40%" height={400}>
-            <BarChart data={data} margin={{ top: 10, right: 20, left: 20, bottom: 10 }}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Bar dataKey="pv" fill="#8884d8" />
-              <Bar dataKey="uv" fill="#82ca9d" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+      <div style={{ width: "80%", height: "400px",paddingLeft:"300px",marginTop:"-25rem" }}>
+      <ResponsiveContainer width="50%" height="100%">
+        <h2>Total spent</h2>
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+          barSize={20}
+        >
+          <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Bar dataKey="pv" fill="#8884d8" background={{ fill: '#eee' }} />
+        </BarChart>
+      </ResponsiveContainer>
       </div>
     <div className="radial_chart">
     <h2 className="radial-title">Analytics</h2>
@@ -85,37 +133,32 @@ const Dashbordview = () => {
             clockWise
             dataKey="uv"
           />
-         {/* <Legend iconSize={10} layout="vertical" verticalAlign="left" wrapperStyle={style} /> */}
+        
         </RadialBarChart>
       </ResponsiveContainer>
       </div>
-      <div className="recent-orders">
-        <h3>Recent Order</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Tracking No</th>
-              <th>Product Name</th>
-              <th>Price</th>
-              <th>Total Order</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {recentOrders.map((order, index) => (
-              <tr key={index}>
-                <td>{order.trackingNo}</td>
-                <td className="product-info">
-                  {/* <img src={order.img} alt={order.product} /> */}
-                  {order.product}
-                </td>
-                <td>{order.price}</td>
-                <td><div className="badge">{order.totalOrder}</div></td>
-                <td>{order.total}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div style={{ width: "70%", height: "400px",paddingLeft:"300px",marginTop:"15rem" }}>
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          width={500}
+          height={300}
+          data={data1}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeDasharray="5 5" />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d" strokeDasharray="3 4 5 2" />
+        </LineChart>
+      </ResponsiveContainer>
       </div>
     </div>
   );
