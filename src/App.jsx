@@ -1,6 +1,6 @@
 
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Blog from "./components/Blog.jsx";
 import Shop from "./components/Shop.jsx";
@@ -15,6 +15,9 @@ import DashbordLayout from "./Dashbord/DashbordLayout.jsx";
 import Dashbordview from "./Dashbord/Dashbordview.jsx";
 import Order from "./Dashbord/Order.jsx";
 import Product from "./Dashbord/Product.jsx";
+import Customer from "./Dashbord/Customer.jsx";
+import Setting from "./Dashbord/Setting.jsx";
+import Logout from "./Dashbord/Logout.jsx";
 const App = () => {
   return (
   
@@ -33,10 +36,14 @@ const App = () => {
           
            
         </Route>
+        
         <Route path="/"element={<DashbordLayout/>}>
         <Route path="/dashbord"index element={<Dashbordview/>}/>
         <Route path="/Order" element={<Order/>}/>
         <Route path="/Product"element={<Product/>}/>
+        <Route path="/Customer"element={<Customer/>}/>
+        <Route path="/Setting"element={<Setting/>}/>
+        <Route path="/Logout"element={<Logout/>}/>
         </Route>
         
       </Routes>

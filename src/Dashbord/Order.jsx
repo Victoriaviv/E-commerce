@@ -70,10 +70,11 @@ function Order(){
     { trackingNo: "#JY7685", product: "Sport", price: "$44", totalOrder: 125, total: "$810",image:sport }
   ];
     return(
-<div>
+<div className="table">
 
 
 <div className="recent-orders">
+  
         <h3>Recent Order</h3>
         <table>
           <thead>
@@ -113,7 +114,7 @@ function Order(){
           ))}
         </div>
       </div>
-      <div style={{ width: "60%", height: "400px",paddingLeft:"950px",marginTop:"-47rem" }}>
+      <div style={{ width: "70%", height: "400px",paddingLeft:"700px",marginTop:"-73rem" }}>
       <ResponsiveContainer width="50%" height="100%">
         <BarChart
           width={500}

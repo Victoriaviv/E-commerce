@@ -21,33 +21,35 @@ body {
   color: black;
 }
 .dashboard_content{
-  margin-top: 50rem;
+  margin-top: rem;
 
 }
 .dashboard-title{
     margin-left: 10rem;
 }
 .stats-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-around; 
-    width: 80%;
-    margin-bottom: -50px; 
+    width: 40%;
+    margin-bottom: -20rem; 
     position: relative;
     z-index: 1;
     margin-left: 20rem;
+    /* margin-top: -10rem; */
   }
   
   .stats-box {
-     background-color: white;
+    background-color: white;
     color:black;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
     width: 150px;
     height: 90px;
-    /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);  */
-    /* transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
-    margin-top: -44rem;
+     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    margin-top: 6rem;
     
   }
   
@@ -67,10 +69,11 @@ body {
   .stats-box p {
     font-size: 22px;
     font-weight: bold;
+    color: blue;
   }
   .radial_chart{
     margin-left: 40rem;
-    margin-top: -30rem;
+    margin-top: 15rem;
    
   }
   .radial-title{

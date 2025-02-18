@@ -17,12 +17,21 @@ function Product(){
         { image: gadget,product: "gadget", date: "10 february,2025", price: "$454", stock: 25, status: "draft" },
       ];
  return(
-<div>
+<div className="product">
 <div className="productheader">
-        <input type="text" placeholder="Find Product" className="searc-input" />
-        <select className="filter-dropdown">
-          <option>All</option>
-        </select>
+<input type="text" placeholder="Find product" className="search-input" />
+<select className="filter-dropdown">
+<option>All</option>
+<option>watch</option>
+<option>women</option>
+<option>sport</option>
+<option>electronics</option>
+<option>gadgets</option>
+<option>lotion</option>
+</select>
+<button className="add-user-button">+ Add Product</button>
+    
+   
         
       </div>
       
@@ -50,7 +59,7 @@ function Product(){
                 </td>
                 <td>{order.price}</td>
                 <td><div className="stock">{order.stock}</div></td>
-                <td>{order.status}</td>
+                <td> <span className={`status ${order.status.toLowerCase()}`}>{order.status}</span></td>
               </tr>
             ))}
           </tbody>

@@ -2,7 +2,7 @@
     
     width: 70%;
     margin-left: 20rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 .recent-products h3{
     font-size: 30px;
@@ -26,11 +26,12 @@
     font-weight: 40px;
 }
 .productheader{
-   margin-top: 3rem;
+   margin-top:1rem;
    margin-bottom: -5rem;
 }
 .searc-input{
 margin-right: -30rem;
+margin-top: 40rem;
 }
 .filter-dropdown{
    border: none;
@@ -38,3 +39,23 @@ margin-right: -30rem;
     margin-left: 10px;
     
 }
+.productheader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 20rem;
+}
+.status.published {
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .status.draft {
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+  }
+ 

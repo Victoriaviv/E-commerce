@@ -98,7 +98,7 @@ const Dashbordview = () => {
           ))}
         </div>
       </div>
-      <div style={{ width: "80%", height: "400px",paddingLeft:"300px",marginTop:"-25rem" }}>
+      <div style={{ width: "80%", height: "400px",paddingLeft:"900px",marginTop:"-25rem" }}>
       <ResponsiveContainer width="50%" height="100%">
         <h2>Total spent</h2>
         <BarChart
@@ -137,7 +137,7 @@ const Dashbordview = () => {
         </RadialBarChart>
       </ResponsiveContainer>
       </div>
-      <div style={{ width: "70%", height: "400px",paddingLeft:"300px",marginTop:"15rem" }}>
+      <div style={{ width: "40%", height: "400px",paddingLeft:"300px",marginTop:"-30rem" }}>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={500}

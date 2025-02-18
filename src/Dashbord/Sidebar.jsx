@@ -16,12 +16,10 @@ function Sidebar () {
 <li><Link to="/Dashbord"><FaHome/>   Dashbord</Link></li> 
 <li><Link to="/Product"><MdProductionQuantityLimits/>products</Link></li> 
 <li><Link to="/Order"><TiShoppingCart />Orders</Link></li> 
-<li><Link><FaUsers />   customers</Link></li> 
-<li><Link>< MdInventory2/>  invetory management</Link></li> 
-<li><Link><FaSalesforce/>  sales&report</Link></li> 
-<li><Link><MdDiscount/>   Discount&coupons</Link></li> 
-<li><Link><IoMdSettings />   setting</Link></li> 
-<li><Link><CiLogin/>   logout</Link></li> 
+<li><Link to="/Customer"><FaUsers />   customers</Link></li> 
+
+<li><Link to="/Setting"><IoMdSettings />   setting</Link></li> 
+<li><Link to="/Logout"><CiLogin/>   logout</Link></li> 
      </ul>
     
       

@@ -1,9 +1,9 @@
 .nav{
     display: flex;
-   position: fixed;
+   position:fixed;
    width: 83%;
     background-color:#F5F8FA;
-    margin-top: -51rem;
+    margin-top: -1rem;
     margin-left: 15.5rem;
     box-shadow: 2px 1px 2px 1px;
     /* margin-right: 10rem; */
